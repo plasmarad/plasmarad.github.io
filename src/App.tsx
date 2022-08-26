@@ -5,10 +5,12 @@ import * as MUI from '@mui/material/'
 import Button from '@mui/material/Button';
 
 //import theme
+import {DefaultTheme} from './assets/theme';
 
-import {DefaultTheme} from './theme';
+//import svg
+import {ConfCog_svg} from './assets/svg_cog521x512';
 
-function head() {
+function HeadMetadata(props:any) {
   return (
 	<HelmetProvider>
 		<Helmet>
@@ -19,13 +21,14 @@ function head() {
   );
 }
 
+
 export default function App() {
   return (
     <div className = "App">	
-      	{ head() }
-		<MUI.ThemeProvider theme={DefaultTheme}>
-			<MUI.Divider></MUI.Divider>
-		</MUI.ThemeProvider>
+      	<HeadMetadata />
+
+		// todo: research containers and grid
+
     </div>
   );
 }
