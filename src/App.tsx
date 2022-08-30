@@ -1,7 +1,5 @@
 import React from 'react';
 import {Helmet, HelmetProvider} from 'react-helmet-async';
-
-import * as MUI from '@mui/material/'
 import Button from '@mui/material/Button';
 
 //import theme
@@ -27,9 +25,8 @@ export default function App() {
     <div className = "App">	
       	<HeadMetadata />
 
-		// todo: research containers and grid
+		{/* Add an App bar and research containers/components */}
 
     </div>
   );
 }
-
