@@ -21,7 +21,7 @@ function HeadMetadata(props:any) {
 
 function AnimateAppBar(props:any) {
 	return (
-		<Slide direction="right" in={props.MenuOpen} mountOnEnter unmountOnExit>
+		<Slide container={props.ContainerRef}direction="right" in={props.MenuOpen} mountOnEnter unmountOnExit>
 			<ButtonGroup variant="text" color="secondary" aria-label="Configuration slide in button group">
 				<Button>One</Button>
 				<Button>Two</Button>
@@ -35,25 +35,23 @@ function AnimateAppBar(props:any) {
 function HeadBar(props: any){
 	{/* set a state for when displaying menu options */}
 	const [menuOpen, setMenuOpen] = React.useState(false);
-	
+	const containerRef = React.useRef(null);
+
 	const handleChange = () => {
 		setMenuOpen((prev) => !prev);
 	};
 
 	return (
-		<Box sx={{ flexGrow: 1 }}>
+		<Box sx={{ flexGrow: 1 }} ref={containerRef}>
       		<AppBar position="static">
-				<Container maxWidth="lg">
       		  	<Toolbar>
-				
 					<IconButton edge="start" color="inherit" aria-label="menu" onClick={handleChange}>
 						<ConfCog_svg />
 					</IconButton>
-					<AnimateAppBar MenuOpen={menuOpen}  />
+					<AnimateAppBar MenuOpen={menuOpen} ContainerRef={containerRef} />
 
 
 			  	</Toolbar>
-			</Container>
       		</AppBar>
     	</Box>
 	)
