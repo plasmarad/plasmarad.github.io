@@ -11,7 +11,7 @@ declare module '@mui/material/styles' {
         danger?: string;
       };
     }
-  }
+}
   
 
 
