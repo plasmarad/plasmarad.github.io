@@ -2,7 +2,7 @@ import React from 'react';
 import {Helmet, HelmetProvider} from 'react-helmet-async';
 
 
-import { AppBar, Box, Button, Container, IconButton, ThemeProvider, Toolbar, Typography, Slide, ButtonGroup } from '@mui/material';
+import { AppBar, Box, Button, Container, IconButton, ThemeProvider, Toolbar, Typography, Slide, ButtonGroup, Fade } from '@mui/material';
 
 //import svg
 import {ConfCog_svg} from './assets/svg_cog521x512';
@@ -19,18 +19,7 @@ function HeadMetadata(props:any) {
   );
 }
 
-function AnimateAppBar(props:any) {
-	return (
-		<Slide container={props.ContainerRef}direction="right" in={props.MenuOpen} mountOnEnter unmountOnExit>
-			<ButtonGroup variant="text" color="secondary" aria-label="Configuration slide in button group">
-				<Button>One</Button>
-				<Button>Two</Button>
-				<Button>Three</Button>
-			</ButtonGroup>
-		</Slide>
-	)
 
-}
 
 function HeadBar(props: any){
 	{/* set a state for when displaying menu options */}
@@ -42,14 +31,26 @@ function HeadBar(props: any){
 	};
 
 	return (
-		<Box sx={{ flexGrow: 1 }} ref={containerRef}>
+		<Box sx={{
+			overflow: 'hidden',
+		}} ref={containerRef} >
       		<AppBar position="static">
       		  	<Toolbar>
 					<IconButton edge="start" color="inherit" aria-label="menu" onClick={handleChange}>
 						<ConfCog_svg />
 					</IconButton>
-					<AnimateAppBar MenuOpen={menuOpen} ContainerRef={containerRef} />
-
+					<Slide  direction="right" in={menuOpen} container={containerRef.current}>
+						
+						<div>
+						<Fade in={menuOpen} timeout={750}>
+						<ButtonGroup variant="outlined" color="secondary" aria-label="Configuration slide in button group">
+							<Button>One</Button>
+							<Button>Two</Button>
+							<Button>Three</Button>
+						</ButtonGroup>
+						</Fade>
+						</div>
+					</Slide>
 
 			  	</Toolbar>
       		</AppBar>
