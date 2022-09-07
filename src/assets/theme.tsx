@@ -23,7 +23,7 @@ export  const DefaultTheme = createTheme({
             main: '#e1a933',
         },
         secondary: {
-            main: '#336be1',
+            main: '#6206f9',
         },
         error: {
             main: '#FF0000',
