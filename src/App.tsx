@@ -8,19 +8,6 @@ import { AppBar, Box, Button, Container, IconButton, ThemeProvider, Toolbar, Typ
 import {ConfCog_svg} from './assets/svg_cog521x512';
 import {DefaultTheme} from './assets/theme';
 
-function HeadMetadata(props:any) {
-  return (
-	<HelmetProvider>
-		<Helmet>
-		  <title>plasmarad.me</title>
-		  <meta name="description" content="My description" />
-		</Helmet>
-	</HelmetProvider>
-  );
-}
-
-
-
 function HeadBar(props: any){
 	{/* set a state for when displaying menu options */}
 	const [menuOpen, setMenuOpen] = React.useState(false);
@@ -34,34 +21,38 @@ function HeadBar(props: any){
 		<Box sx={{
 			overflow: 'hidden',
 		}} ref={containerRef} >
-      		<AppBar position="static">
+      		<AppBar position="fixed">
       		  	<Toolbar>
 					<IconButton edge="start" color="inherit" aria-label="menu" onClick={handleChange}>
 						<ConfCog_svg />
 					</IconButton>
+					
+					{/*TODO: original button group gets dissapeared after configs */}
+					
+
+
+					{/* ANIMATIONS: */}
 					<Slide  direction="right" in={menuOpen} container={containerRef.current}>
-						
 						<div>
-						<Fade in={menuOpen} timeout={750}>
-						<ButtonGroup variant="outlined" color="secondary" aria-label="Configuration slide in button group">
-							<Button>One</Button>
-							<Button>Two</Button>
-							<Button>Three</Button>
+						<Fade in={menuOpen} timeout={500} mountOnEnter unmountOnExit>
+						<ButtonGroup variant="contained" color="secondary" aria-label="Configuration slide in button group">
+							<Button>Change color theme </Button>
+							<Button>Behavior</Button>
+							<Button>Website info</Button>
 						</ButtonGroup>
 						</Fade>
 						</div>
 					</Slide>
-
 			  	</Toolbar>
       		</AppBar>
-    	</Box>
+		</Box>
 	)
 }
 
 export default function App() {
   return (
     <div className = "App">	
-      	<HeadMetadata />
+      	{/* <HeadMetadata /> */}
 
 		<ThemeProvider theme={DefaultTheme}>
 			<HeadBar />
