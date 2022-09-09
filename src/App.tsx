@@ -2,7 +2,7 @@ import React from 'react';
 import {Helmet, HelmetProvider} from 'react-helmet-async';
 
 
-import { AppBar, Box, Button, Container, IconButton, ThemeProvider, Toolbar, Typography, Slide, ButtonGroup, Fade } from '@mui/material';
+import { AppBar, Box, Button, IconButton, ThemeProvider, Toolbar, Typography, Slide, ButtonGroup, Fade, DialogContent, Dialog, DialogActions, DialogContentText, DialogTitle, Alert } from '@mui/material';
 
 //import svg
 import {ConfCog_svg} from './assets/svg_cog521x512';
@@ -21,7 +21,7 @@ function HeadBar(props: any){
 		<Box sx={{
 			overflow: 'hidden',
 		}} ref={containerRef} >
-      		<AppBar position="fixed">
+      		<AppBar position="static">
       		  	<Toolbar>
 					<IconButton edge="start" color="inherit" aria-label="menu" onClick={handleChange}>
 						<ConfCog_svg />
@@ -50,12 +50,26 @@ function HeadBar(props: any){
 }
 
 export default function App() {
-  return (
-    <div className = "App">	
-      	{/* <HeadMetadata /> */}
+	const [open, setOpen] = React.useState(false);
 
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+  return (
+	 <div className = "App">	
+
+
+		{/* TODO: when page loads, display alert warning site is WIP */}
 		<ThemeProvider theme={DefaultTheme}>
+		
 			<HeadBar />
+
+			<Alert severity="warning">This is website is under development. Some functions might not work as expected.</Alert>
+
 		</ThemeProvider>
 
     </div>
