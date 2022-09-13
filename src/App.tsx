@@ -18,34 +18,48 @@ function HeadBar(props: any){
 
 	return (
 		
-		<Box sx={{
-			overflow: 'hidden',
-		}} ref={containerRef} >
-      		<AppBar position="static">
-      		  	<Toolbar>
-					<IconButton edge="start" color="inherit" aria-label="menu" onClick={handleChange}>
-						<ConfCog_svg />
-					</IconButton>
+		// rework home page to a better style and layout
+		// perhaps even use gradients around element borders
+
+		{/* <Box sx={{
+		// 	overflow: 'hidden',
+		// }} ref={containerRef} >
+      	// 	<AppBar position="static">
+      	// 	  	<Toolbar>
 					
-					{/*TODO: original button group gets dissapeared after configs */}
+		// 			<IconButton edge="start" color="inherit" aria-label="menu" onClick={handleChange}>
+		// 				<ConfCog_svg />
+		// 			</IconButton>
 					
 
 
-					{/* ANIMATIONS: */}
-					<Slide  direction="right" in={menuOpen} container={containerRef.current}>
-						<div>
-						<Fade in={menuOpen} timeout={500} mountOnEnter unmountOnExit>
-						<ButtonGroup variant="contained" color="secondary" aria-label="Configuration slide in button group">
-							<Button>color theme </Button>
-							<Button>Behavior</Button>
-							<Button>Website info</Button>
-						</ButtonGroup>
-						</Fade>
-						</div>
-					</Slide>
-			  	</Toolbar>
-      		</AppBar>
-		</Box>
+		// 			{/* ANIMATIONS: */}
+		// 			<Slide  direction="right" in={menuOpen} container={containerRef.current}>
+		// 				<div>
+		// 				<Fade in={menuOpen} timeout={500} mountOnEnter unmountOnExit>
+		// 				<ButtonGroup variant="contained" color="secondary" aria-label="Configuration slide in button group">
+		// 					<Button>color theme </Button>
+		// 					<Button>Behavior</Button>
+		// 					<Button>Website info</Button>
+		// 				</ButtonGroup>
+		// 				</Fade>
+		// 				</div>
+		// 			</Slide>
+					
+		// 			<Slide direction="left" in={!menuOpen}  container={containerRef.current}>
+		// 			<Fade in={!menuOpen} timeout={500} >
+		// 			<ButtonGroup variant="contained" color="secondary" aria-label="text primary button group">
+		// 				<Button>Home</Button>
+		// 				<Button>Projects</Button>
+		// 				<Button>Blog</Button>
+		// 				<Button>Contact</Button>
+		// 			</ButtonGroup>
+		// 			</Fade>
+		// 			</Slide>
+
+		// 	  	</Toolbar>
+      	// 	</AppBar>
+		// </Box> 
 	)
 }
 
@@ -55,7 +69,7 @@ export default function App() {
 
 		{/* TODO: when page loads, display alert warning site is WIP */}
 		<ThemeProvider theme={DefaultTheme}>
-			<HeadBar />
+			{/* <HeadBar /> */}
 			<Box sx={{m:1}}></Box>
 			<Alert severity="warning">This is website is under development. Some functions might not work as expected.</Alert>
 			
