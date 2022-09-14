@@ -17,7 +17,7 @@ declare module '@mui/material/styles' {
 
 import {createTheme} from '@mui/material/styles';
 
-export  const DefaultTheme = createTheme({
+export const DefaultTheme = createTheme({
     palette: {
         primary: {
             main: '#e1a933',
