@@ -1,8 +1,9 @@
 import { ThemeProvider } from '@emotion/react';
-import { AppBar, Box, Button, Drawer, Toolbar } from '@mui/material';
+import { AppBar, Box, Button, Drawer, Link, Toolbar, Typography } from '@mui/material';
+import {  Navigate, useNavigate } from 'react-router-dom';
 import React from 'react';
 
-import { DefaultTheme } from './components/theme';
+import { DefaultTheme } from '../components/theme';
 
 class Main extends React.Component {
   render() {
@@ -13,15 +14,14 @@ class Main extends React.Component {
 					
 				</Toolbar>
 			</AppBar>
-			
 		</Box>
 	);
   }
 }
 
-export default function App() {
+export default function Home() {
 	return (
-	<div className = "App">
+	<div className = "Home">
 
 		<ThemeProvider theme={DefaultTheme}>
 			<Main />
