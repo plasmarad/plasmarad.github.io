@@ -1,6 +1,5 @@
 import { ThemeProvider } from '@emotion/react';
-import { AppBar, Box, Button, Drawer, Link, Toolbar, Typography } from '@mui/material';
-import {  Navigate, useNavigate } from 'react-router-dom';
+import { AppBar, Box, Button, ButtonGroup, Drawer, Link, Toolbar, Typography } from '@mui/material';
 import React from 'react';
 
 import { DefaultTheme } from '../components/theme';
@@ -11,7 +10,12 @@ class Main extends React.Component {
 		<Box sx={{overflow: "hidden"}}>
 			<AppBar position="static">
 				<Toolbar>
-					
+					<ButtonGroup variant="contained" color="secondary" aria-label="text primary button group">
+						<Button onClick={ ()=>window.location.href="/"		   }	> Home		</Button>
+						<Button	onClick={ ()=>window.location.href="/contact"  }	> Contact	</Button>
+						<Button onClick={ ()=>window.location.href="/about"    } 	> About		</Button>
+						<Button onClick={ ()=>window.location.href="/projects" } 	> Projects	</Button>
+					</ButtonGroup>
 				</Toolbar>
 			</AppBar>
 		</Box>
