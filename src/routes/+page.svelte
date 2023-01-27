@@ -4,5 +4,6 @@
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation on sveltekit</p>
 <p>I change one thing and it stops working</p>
 
-<!-- display an image -->
-<img src="https://github.com/plasmarad/plasmarad.github.io/blob/4eec996507f3b3b45fb7f578e0cfaf47828ad079/static/favicon.png" alt="svelte" width="500" height="600">
+
+<p> there is an issue with this page where it yields a 404 on firefox. </p>
+<!-- most likely issue is that gh-pages is not set up properly -->
