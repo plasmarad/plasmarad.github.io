@@ -1,8 +1,6 @@
 <script>
 	import Header from './Header.svelte';
 	import './styles.css';
-
-	
 </script>
 
 <div class="app">
@@ -12,7 +10,9 @@
 		<slot />
 	</main>
 
-	<footer><span style="color: gray">plasmarad - 2023</span></footer>
+	<footer>
+		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+	</footer>
 </div>
 
 <style>
@@ -20,18 +20,17 @@
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
-		overflow: hidden;
-		scrollbar-width: none;
 	}
-	
+
 	main {
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		/* padding: 3rem; */
+		padding: 1rem;
 		width: 100%;
 		max-width: 64rem;
 		margin: 0 auto;
+		box-sizing: border-box;
 	}
 
 	footer {
@@ -39,12 +38,16 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		height: 16px;
-		margin-bottom: 8px;
+		padding: 12px;
 	}
-	@media (min-width: 128px) {
-		/* footer {
+
+	footer a {
+		font-weight: bold;
+	}
+
+	@media (min-width: 480px) {
+		footer {
 			padding: 12px 0;
-		} */
+		}
 	}
 </style>
