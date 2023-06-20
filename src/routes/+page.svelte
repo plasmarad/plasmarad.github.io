@@ -3,10 +3,10 @@
 	<meta name="Plasmarad.ME" content="My portfolio of awesome projects" />
 </svelte:head>
 
-<div> 
+<script>
+	import Newslist from './newslist.svelte';
+</script>
 
-</div>
+<Newslist />
 
-<style>
-	
-</style>
+<style></style>

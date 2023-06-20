@@ -12,7 +12,7 @@
 		<slot />
 	</main>
 
-	<footer><span style="color: gray">plasmarad - 2023</span></footer>
+	<footer style="color: gray"> plasmarad - 2023 </footer>
 </div>
 
 <style>
@@ -28,10 +28,7 @@
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		/* padding: 3rem; */
 		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
 	}
 
 	footer {
@@ -42,9 +39,24 @@
 		height: 16px;
 		margin-bottom: 8px;
 	}
-	@media (min-width: 128px) {
-		/* footer {
-			padding: 12px 0;
-		} */
-	}
+
+
+slot::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: #00000000;
+}
+
+slot::-webkit-scrollbar-thumb {
+  background-color: rgb(75, 75, 75);
+  border-radius: 20px;
+  border: 4px solid #f5f5f5;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+slot::-webkit-scrollbar-track {
+  background-color: #f5f5f500;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
 </style>

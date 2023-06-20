@@ -14,16 +14,10 @@
 <style>
 .navbar {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 2;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 16px;
   height: 64px;
 }
 
