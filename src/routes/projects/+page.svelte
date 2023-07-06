@@ -36,11 +36,6 @@
     chips={[cpp_chip, durango_chip, FOSS_chip]}
     />
 
-    <!-- Blame it on rust Trademarking -->
-    <!-- <Card banner="" 
-    desc='moddable TUI text editor' 
-    chips={[rust_chip, cli_chip]}
-    /> -->
 
     <Card banner=""
     desc='my portfolio website made with svelte-kit' 
