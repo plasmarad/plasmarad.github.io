@@ -57,7 +57,7 @@
     }
 
     .chip {
-		margin: 0.5rem;
+		margin: 0.2rem;
 		display: inline-block;
 		padding: 0.25rem 0.4rem;
 		border: 1px solid transparent;

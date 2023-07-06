@@ -46,18 +46,19 @@
         border-radius: .5em;
         transition: transform .2s ease-in-out;
         width: 85vw;
-        min-height: 10vh;
+        min-height: 15vh;
         max-height: 40vh;
         padding-bottom: 5px;
     }
     
     .desc {
         text-align: center;
-        height: 70%;
+        /* min-height: 50%; */
+        max-height: calc(100% - 3.75rem - 6px);
         padding-left: 1rem;
         padding-right: 1rem;
-        padding-top: 1rem;
-        margin-bottom: 1.5rem;
+        padding-top: .75rem;
+        margin-bottom: .2rem;
         overflow-wrap: break-word;
         
         overflow-y: auto;

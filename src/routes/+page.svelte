@@ -6,7 +6,13 @@
 <script>
 	import Newslist from './newslist.svelte';
 </script>
-
+<h2>Welcome,<br> here's the latest news!</h2>
 <Newslist />
 
-<style></style>
+<style>
+	h2 {
+		margin-top: 80px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+</style>
