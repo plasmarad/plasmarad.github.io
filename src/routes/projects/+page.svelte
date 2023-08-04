@@ -68,11 +68,14 @@
     place-items: center;
 
     height: calc(100vh - 180px);
-    width: 92.5vw;
     justify-content: center;
     align-items: stretch;
     overflow-y: scroll;
 }
 
+.PanelGrid::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
 
 </style>

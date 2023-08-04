@@ -16,7 +16,7 @@
   position: fixed;
   width: 100%;
   background-color: #ffffff;
-  z-index: 2;
+  z-index: 1;
   display: flex;
   height: 64px;
 }

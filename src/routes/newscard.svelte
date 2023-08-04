@@ -8,6 +8,7 @@
     // export let project  = 'placeholder';
     export let desc     = 'placeholder';
     export let date     =  'January 1 1970';
+    export let youtube  = 'none';
 
     /**
      * @typedef {object} Project
@@ -37,6 +38,15 @@
     <div class = "desc">
         {desc}
     </div>
+    {#if youtube != 'none'}
+    <div class = "vid">
+        <iframe title="video"
+        src="https://www.youtube.com/embed/{youtube}" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen />
+    </div>
+    {/if}
 </div>
 
 <style>
@@ -45,22 +55,21 @@
         /* use the color var just like in html */
         border-radius: .5em;
         transition: transform .2s ease-in-out;
-        width: 85vw;
+        min-width: 40vw;
+        max-width: 80vw;
         min-height: 15vh;
-        max-height: 40vh;
+        max-height: calc(30vh + 90px);
         padding-bottom: 5px;
     }
     
     .desc {
         text-align: center;
-        /* min-height: 50%; */
         max-height: calc(100% - 3.75rem - 6px);
         padding-left: 1rem;
         padding-right: 1rem;
         padding-top: .75rem;
         margin-bottom: .2rem;
         overflow-wrap: break-word;
-        
         overflow-y: auto;
     }
 
@@ -76,7 +85,13 @@
         font-size: 0.7em;
     }
 
-
+    .vid {
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
 .newscard::-webkit-scrollbar {
     width: 0.0em;
 }
