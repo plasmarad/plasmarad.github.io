@@ -58,7 +58,7 @@
         min-width: 40vw;
         max-width: 80vw;
         min-height: 15vh;
-        max-height: calc(30vh + 90px);
+        max-height: calc(75vh);
         padding-bottom: 5px;
     }
     

@@ -12,7 +12,7 @@
 <div id = "news__list">
     <Newscard project={website} desc=
     "Website has been migrated to plasmarad.online, rebranding aswell." 
-    date="2023 JULY 5"
+    date="2023 AUGUST 23"
     />
     <Newscard project={website} desc=
     "Improved alignment for Project cards, scrollbars, and news cards."
@@ -41,6 +41,7 @@
         grid-template-columns: repeat(1,  50);
         grid-row-gap: 25px;
         justify-items: center;
+        margin-bottom: 1rem;
     }
     #news__list::-webkit-scrollbar {
         background:transparent;
