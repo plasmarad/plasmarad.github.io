@@ -1,6 +1,6 @@
 <svelte:head>
-    <title>contact.plasmarad.me</title>
-    <meta name="Plasmarad.ME" content="My portfolio of awesome projects" />
+    <title>contact.plasmarad</title>
+    <meta name="Plasmarad" content="My portfolio of awesome projects" />
 </svelte:head>
 
 <div class="content">

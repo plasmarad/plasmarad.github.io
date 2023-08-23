@@ -1,15 +1,19 @@
 <script>
     import Newscard from './newscard.svelte';
     const alkaline = {  color: 'green',    color2: 'purple' ,   name: 'Alkaline Tech Studios',   };
-    const durango  = {  color: 'red'    ,    color2: 'orange',   name: 'Durango' ,   };
-    const website  = {  color: 'aqua'       ,    color2: 'aquamarine',   name: 'Website'}
-    const Quasar   = {  color: 'white'       ,    color2: 'black',   name: 'Quasar' }
-    const Youtube = {  color: 'purple'       ,    color2: 'red',   name: 'Youtube' }
+    const durango  = {  color: 'red'  ,    color2: 'orange' ,   name: 'Durango' ,   };
+    const website  = {  color: 'aqua' ,    color2: 'purple' ,   name: 'Website'}
+    const Quasar   = {  color: 'white',    color2: 'black'  ,   name: 'Quasar' }
+    const Youtube = {  color: 'gold'  ,    color2: 'red'    ,   name: 'Youtube' }
 </script>
 
 
 
 <div id = "news__list">
+    <Newscard project={website} desc=
+    "Website has been migrated to plasmarad.online, rebranding aswell." 
+    date="2023 JULY 5"
+    />
     <Newscard project={website} desc=
     "Improved alignment for Project cards, scrollbars, and news cards."
     date="2023 AUGUST 3"
@@ -19,7 +23,6 @@
     youtube="5WHMWaViqOY"
     date="2023 JULY 19"
     />
-
     <Newscard project={website} desc=
     "added missing logos for the Durango and Website projects card." 
     date="2023 JULY 19"
