@@ -12,7 +12,7 @@
 		<slot />
 	</main>
 
-	<footer style="color: gray"> plasmarad - 2023 </footer>
+	<footer style="color: gray"> plasmarad - 2024 </footer>
 </div>
 
 <style>

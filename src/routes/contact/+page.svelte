@@ -9,7 +9,7 @@
     </h4>
 
     <h4>If you need to contact me, here's my email:</h4>
-    <i class="fa-solid fa-envelope" /> <a href="mailto:contact@plasmarad.me"> contact@plasmarad.me</a>
+    <i class="fa-solid fa-envelope" /> <a href="mailto:contact@plasmarad.online"> contact@plasmarad.online</a>
     <h4>this website is simplistic for the time being,
         <br> A rework & redesign is garanteed to happen in the future.
     </h4>

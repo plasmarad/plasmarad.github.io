@@ -1,12 +1,12 @@
 <svelte:head>
 	<title>plasmarad</title>
-	<meta name="Plasmarad.ME" content="My portfolio of awesome projects" />
+	<meta name="Plasmarad.online" content="My portfolio of projects" />
 </svelte:head>
 
 <script>
 	import Newslist from './newslist.svelte';
 </script>
-<h2>Welcome,<br> here's the latest news!</h2>
+<h2>Welcome,<br> here's the latest news.</h2>
 <Newslist />
 
 <style>

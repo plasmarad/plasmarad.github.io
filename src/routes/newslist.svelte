@@ -1,37 +1,35 @@
 <script>
     import Newscard from './newscard.svelte';
-    const alkaline = {  color: 'green',    color2: 'purple' ,   name: 'Alkaline Tech Studios',   };
-    const durango  = {  color: 'red'  ,    color2: 'orange' ,   name: 'Durango' ,   };
-    const website  = {  color: 'aqua' ,    color2: 'purple' ,   name: 'Website'}
-    const Quasar   = {  color: 'white',    color2: 'black'  ,   name: 'Quasar' }
-    const Youtube = {  color: 'gold'  ,    color2: 'red'    ,   name: 'Youtube' }
+    const alkaline = {  color: 'green',    color2: 'purple' ,   name: 'Alkaline Tech Studios'   };
+    const durango  = {  color: 'red'  ,    color2: 'orange' ,   name: 'Durango'                 };
+    const website  = {  color: 'aqua' ,    color2: 'purple' ,   name: 'Website'                 };
+    const Quasar   = {  color: 'white',    color2: 'black'  ,   name: 'Quasar'                  };
+    const Youtube  = {  color: 'gold' ,    color2: 'red'    ,   name: 'Youtube'                 };
 </script>
 
 
 
 <div id = "news__list">
     <Newscard project={website} desc=
+    "Beginning major overhaul on this website's backend. Website will still be up." 
+    date="2024 FEBRUARY 12" />
+
+    <Newscard project={website} desc=
     "Website has been migrated to plasmarad.online, rebranding aswell." 
-    date="2023 AUGUST 23"
-    />
+    date="2023 AUGUST 23" />
+
     <Newscard project={website} desc=
     "Improved alignment for Project cards, scrollbars, and news cards."
-    date="2023 AUGUST 3"
-    />
-    <Newscard project={Youtube} desc=
-    "Posted a website show case video on youtube"
-    youtube="5WHMWaViqOY"
-    date="2023 JULY 19"
-    />
+    date="2023 AUGUST 3" />
+    
     <Newscard project={website} desc=
     "added missing logos for the Durango and Website projects card." 
-    date="2023 JULY 19"
-    />
+    date="2023 JULY 19" />
+    
     <Newscard project={website} desc=
     "deployed website to github's static site hosting service,
     this site is now live at plasmarad.me" 
-    date="2023 JULY 5"
-    />
+    date="2023 JULY 5" />
 </div>
 
 <style>
