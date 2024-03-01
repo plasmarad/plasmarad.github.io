@@ -14,7 +14,7 @@
     <u><b>HTML SUPPORT ADDED TO NEWS CARDS </u>" 
     date="2024 FEBRUARY 28" />
 
-    <Newscard project={VisualK} Description= 
+    <Newscard project={website} Description= 
     "Website has been migrated to plasmarad.online, rebranding aswell." 
     date="2023 AUGUST 23" />
 
