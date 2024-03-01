@@ -1,33 +1,33 @@
 <script>
     import Newscard from './newscard.svelte';
-    const alkaline = {  color: 'green',    color2: 'purple' ,   name: 'Alkaline Tech Studios'   };
-    const durango  = {  color: 'red'  ,    color2: 'orange' ,   name: 'Durango'                 };
-    const website  = {  color: 'aqua' ,    color2: 'purple' ,   name: 'Website'                 };
-    const Quasar   = {  color: 'white',    color2: 'black'  ,   name: 'Quasar'                  };
-    const Youtube  = {  color: 'gold' ,    color2: 'red'    ,   name: 'Youtube'                 };
+    const alkaline = {  bottomright_Color: 'green'  ,    topleft_Color: 'purple'   ,   name: 'Alkaline Tech Studios'   };
+    const durango  = {  bottomright_Color: 'purple' ,    topleft_Color: 'gold'     ,   name: 'Durango'                 };
+    const website  = {  bottomright_Color: 'aqua'   ,    topleft_Color: 'purple'   ,   name: 'Website'                 };
+    const Makina   = {  bottomright_Color: 'red'    ,    topleft_Color: 'gold'     ,   name: 'Makina'                  };
+    const VisualK  = {  bottomright_Color: 'blue'   ,    topleft_Color: 'purple'   ,   name: 'VisualK'                 };
 </script>
 
 
 
 <div id = "news__list">
-    <Newscard project={website} desc=
-    "Beginning major overhaul on this website's backend. Website will still be up." 
-    date="2024 FEBRUARY 12" />
+    <Newscard project={durango} Description = "
+    <u><b>HTML SUPPORT ADDED TO NEWS CARDS </u>" 
+    date="2024 FEBRUARY 28" />
 
-    <Newscard project={website} desc=
+    <Newscard project={VisualK} Description= 
     "Website has been migrated to plasmarad.online, rebranding aswell." 
     date="2023 AUGUST 23" />
 
-    <Newscard project={website} desc=
+    <Newscard project={website} Description=
     "Improved alignment for Project cards, scrollbars, and news cards."
     date="2023 AUGUST 3" />
     
-    <Newscard project={website} desc=
+    <Newscard project={website} Description=
     "added missing logos for the Durango and Website projects card." 
     date="2023 JULY 19" />
     
-    <Newscard project={website} desc=
-    "deployed website to github's static site hosting service,
+    <Newscard project={website} Description=
+    "deployed website to github's static site hosting service, <br>
     this site is now live at plasmarad.me" 
     date="2023 JULY 5" />
 </div>

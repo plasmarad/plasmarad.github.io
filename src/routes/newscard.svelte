@@ -1,20 +1,19 @@
 <script>
-    // project name: string
-    // version: string
-    // desc: string
-    // color: string
-    // link: string
+    // project name : string
+    // version      : string
+    // Description      : string
+    // color        : string
+    // link         : string
     
-    // export let project  = 'placeholder';
-    export let desc     = 'placeholder';
-    export let date     =  'January 1 1970';
-    export let youtube  = 'none';
+    export let Description      =   'placeholder';
+    export let date         =   'January 1 1970';
+    export let video        =   'none';
 
     /**
-     * @typedef {object} Project
+     * @typedef  {object} Project
      * @property {string} name
-     * @property {string} color = 'gray'    - color of the card
-     * @property {string} color2 = 'gray'   - 2nd color for the gradient
+     * @property {string} bottomright_Color = 'gray'    - bottomright_Color of the card
+     * @property {string} topleft_Color = 'gray'   - 2nd color for the gradient
      */
 
     /**
@@ -22,30 +21,30 @@
     */
     export let project = {
         name: 'placeholder',
-        color: 'gray',
-        color2: 'gray',
+        bottomright_Color: 'gray',
+        topleft_Color: 'gray',
     };
 
 </script>
 
 <div class="newscard"
         style="background: linear-gradient(black, black)          padding-box,
-        linear-gradient(to top left, {project.color}, {project.color2})  border-box;">
-    
+        linear-gradient(to top left, {project.bottomright_Color}, {project.topleft_Color})  border-box;">
     
     <h3 class = "project__name">{project.name}</h3>
     <h6 class="date">{date}</h6>
-    <div class = "desc">
-        {desc}
+    <div class = "Description">
+        {@html Description}
     </div>
-    {#if youtube != 'none'}
-    <div class = "vid">
-        <iframe title="video"
-        src="https://www.youtube.com/embed/{youtube}" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen />
-    </div>
+    {#if video != 'none'}
+        <div class = "vid">
+            <iframe title="video"
+            src="{video}" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen />
+        </div> 
     {/if}
 </div>
 
@@ -62,7 +61,7 @@
         padding-bottom: 5px;
     }
     
-    .desc {
+    .Description {
         text-align: center;
         max-height: calc(100% - 3.75rem - 6px);
         padding-left: 1rem;
