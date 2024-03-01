@@ -10,7 +10,7 @@
 
 
 <div id = "news__list">
-    <Newscard project={durango} Description = "
+    <Newscard project={website} Description = "
     <u><b>HTML SUPPORT ADDED TO NEWS CARDS </u>" 
     date="2024 FEBRUARY 28" />
 
