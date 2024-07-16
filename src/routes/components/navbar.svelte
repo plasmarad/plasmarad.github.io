@@ -1,17 +1,19 @@
 <script>
-  	import { page } from "$app/stores";
+    import { page } from "$app/stores";
 </script>
 
 <nav class="navbar">
-	<div class="navbar__links">
-	  <a aria-current={$page.url.pathname === '/'         ? 'page' : undefined}  href="/"         >  News        </a> 
-	  <a aria-current={$page.url.pathname === '/projects' ? 'page' : undefined}  href="/projects" >  Projects    </a>
+  <div class="navbar__links">
+    <a aria-current={$page.url.pathname === '/home'     ? 'page' : undefined}  href="/home"     >  News        </a> 
+    <a aria-current={$page.url.pathname === '/projects' ? 'page' : undefined}  href="/projects" >  Projects    </a>
     <a aria-current={$page.url.pathname === '/about'    ? 'page' : undefined}  href="/about"    >  About       </a>
-	  <a aria-current={$page.url.pathname === '/contact'  ? 'page' : undefined}  href="/contact"  >  Contact Me  </a>
-	</div>
+    <a aria-current={$page.url.pathname === '/contact'  ? 'page' : undefined}  href="/contact"  >  Contact Me  </a>
+  </div>
 </nav>
-  
+
 <style>
+
+
 .navbar {
   position: fixed;
   width: 100%;
@@ -59,4 +61,4 @@ a[aria-current="page"]::after {
   }
 }
 
-  </style>
+</style>

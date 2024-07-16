@@ -1,5 +1,5 @@
 <script>
-	import Header from './Header.svelte';
+	import Header from './components/navbar.svelte';
 	import './styles.css';
 
 	
