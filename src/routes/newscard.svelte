@@ -34,7 +34,8 @@
     <h3 class = "project__name">{project.name}</h3>
     <h6 class="date">{date}</h6>
     <div class = "Description">
-        {@html Description}
+        <!-- {@html Description} -->
+        {Description}
     </div>
     {#if video && video !== 'none'}
     <div class ="vid">
