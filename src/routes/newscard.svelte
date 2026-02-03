@@ -35,7 +35,7 @@
     <h6 class="date">{date}</h6>
     <div class = "Description">
         <!-- {@html Description} -->
-        {Description}
+        {@html Description}
     </div>
     {#if video && video !== 'none'}
     <div class ="vid">
