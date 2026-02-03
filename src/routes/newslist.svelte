@@ -11,25 +11,25 @@
 
 <div id = "news__list">
     <Newscard project={website} Description = "
-    <u><b>HTML SUPPORT ADDED TO NEWS CARDS </u>" 
-    date="2024 FEBRUARY 28" />
+    <u><b>HTML SUPPORT ADDED TO NEWS CARDS</b></u>" 
+    date="2024 FEBRUARY 28"> </Newscard>
 
     <Newscard project={website} Description= 
     "Website has been migrated to plasmarad.online, rebranding aswell." 
-    date="2023 AUGUST 23" />
+    date="2023 AUGUST 23"> </Newscard>
 
     <Newscard project={website} Description=
     "Improved alignment for Project cards, scrollbars, and news cards."
-    date="2023 AUGUST 3" />
-    
+    date="2023 AUGUST 3"> </Newscard>
+
     <Newscard project={website} Description=
     "added missing logos for the Durango and Website projects card." 
-    date="2023 JULY 19" />
-    
+    date="2023 JULY 19"> </Newscard>
+
     <Newscard project={website} Description=
     "deployed website to github's static site hosting service, <br>
     this site is now live at plasmarad.me" 
-    date="2023 JULY 5" />
+    date="2023 JULY 5"> </Newscard>
 </div>
 
 <style>

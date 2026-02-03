@@ -7,7 +7,7 @@
 	import Newslist from './newslist.svelte';
 </script>
 <h2>Welcome,<br> here's the latest news.</h2>
-<Newslist />
+<Newslist></Newslist>
 
 <style>
 	h2 {

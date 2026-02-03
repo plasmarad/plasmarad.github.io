@@ -36,15 +36,15 @@
     <div class = "Description">
         {@html Description}
     </div>
-    {#if video != 'none'}
-        <div class = "vid">
-            <iframe title="video"
-            src="{video}" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; 
-            encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen />
-        </div> 
+    {#if video && video !== 'none'}
+    <div class ="vid">
+        <iframe title="video"
+        src={video}
+        allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+        </iframe>
+    </div>
     {/if}
 </div>
 
